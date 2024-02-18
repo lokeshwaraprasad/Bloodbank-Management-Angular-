@@ -1,0 +1,11 @@
+span{
+    color: rgba(247, 7, 7, 0.973);
+    font-size: larger;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mat-card-title{
+    font-weight: 345!important;
+    font-size: 25px;
+}

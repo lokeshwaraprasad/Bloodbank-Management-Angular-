@@ -1,0 +1,51 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-image: url(../groups/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  .blood-group-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .blood-group-list div {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #308aeb;
+    color: #fff;
+  }
+  
+  .matching-groups {
+    margin-top: 20px;
+  }
+  
+  .matching-groups h3 {
+    margin-bottom: 10px;
+  }
+  
+  .matching-groups ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .matching-groups li {
+    margin-bottom: 5px;
+  }
+  
+  

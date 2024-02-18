@@ -1,0 +1,104 @@
+<h2 mat-dialog-tile> {{ title }} </h2>
+<mat-divider></mat-divider>
+
+<mat-dialog-content [formGroup] = "form">
+
+    <mat-grid-list cols="2">
+
+      <mat-grid-tile>
+        <div>
+         
+       
+
+          <mat-form-field>
+            <mat-label>Full name</mat-label>
+            <input matInput
+                    placeholder="Ex. lokesh"
+                    formControlName="volunteer_name"
+                    required>
+            <mat-error *ngIf="form.get('volunteer_name')?.invalid || form.get('volunteer_name')?.dirty || form.get('volunteer_name')?.touched">Enter full name</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Blood Group : </mat-label>
+            <input matInput
+                    placeholder="AB+"
+                    formControlName="blood"
+                    required>
+            <mat-error *ngIf="form.get('blood')?.invalid || form.get('blood')?.dirty || form.get('blood')?.touched">Enter valid Blood Group</mat-error>
+          </mat-form-field>
+          
+
+          <mat-form-field>
+            <mat-label>Age : </mat-label>
+            <input matInput
+                    placeholder="22"
+                    formControlName="age"
+                    required>
+            <mat-error *ngIf="form.get('age')?.invalid || form.get('age')?.dirty || form.get('age')?.touched">Enter valid Age</mat-error>
+          </mat-form-field>
+
+
+          
+
+          
+
+          
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <div>
+
+        <mat-form-field>
+            <mat-label>Volunteer I'd : </mat-label>
+            <input matInput
+                    placeholder="22589"
+                    formControlName="volunteer_id"
+                    required>
+            <mat-error *ngIf="form.get('volunteer_id')?.invalid || form.get('volunteer_id')?.dirty || form.get('volunteer_id')?.touched">Enter valid Age</mat-error>
+          </mat-form-field>
+
+          
+
+          <mat-form-field>
+            <mat-label>Date of Recent Donation:</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="form.get('date')?.invalid || form.get('date')?.dirty || form.get('date')?.touched">Choose valid Date of Donation</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Mobile number : </mat-label>
+            <input matInput
+                    placeholder="9865452152"
+                    formControlName="mobile"
+                    required>
+            <mat-error *ngIf="form.get('mobile')?.invalid || form.get('mobile')?.dirty || form.get('mobile')?.touched">Enter valid mobile number</mat-error>
+          </mat-form-field>
+          <div>
+            <mat-label class="me-3">Gender : </mat-label>
+            <br>
+            <mat-radio-group aria-label="Select a gender" color="primary" formControlName="gender">
+              <mat-radio-button value="male">Male</mat-radio-button>
+              <mat-radio-button value="female">Female</mat-radio-button>
+              
+            </mat-radio-group>
+            
+          
+          </div>
+
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+        
+</mat-dialog-content>
+
+<div mat-dialog-actions>
+    <button mat-raised-button mat-dialog-close (click)="cancelEnroll()">Cancel</button>
+    <button mat-raised-button color="warn" mat-dialog-close cdkFocusInitial (click)="enrollvolunteer()" [disabled]="form.invalid"> {{buttonName}}</button>
+
+
+</div>

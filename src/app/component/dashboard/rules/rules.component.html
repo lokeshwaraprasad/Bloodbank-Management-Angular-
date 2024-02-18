@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Blood Donation Rules</h2>
+    <div class="dos">
+      <h3>Do's</h3>
+      <div class="rule" *ngFor="let rule of dos; let i = index">
+        <div class="rule-content">
+          <div class="rule-number">{{ i + 1 }}</div>
+          <div class="rule-text">{{ rule }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="donts">
+      <h3>Don'ts</h3>
+      <div class="rule" *ngFor="let rule of donts; let i = index">
+        <div class="rule-content">
+          <div class="rule-number">{{ i + 1 }}</div>
+          <div class="rule-text">{{ rule }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+

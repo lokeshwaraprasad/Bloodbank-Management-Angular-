@@ -1,0 +1,27 @@
+.blood-banks{
+    color:rgb(41, 64, 244);
+    margin: 8px;
+
+    
+    
+    
+}
+.blood-banks  :hover{
+    transform: scale(1.001);
+    color:rgb(232, 23, 23);
+   
+
+}
+
+table {
+    width: 100%;
+    
+  }
+  
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+ 
+  

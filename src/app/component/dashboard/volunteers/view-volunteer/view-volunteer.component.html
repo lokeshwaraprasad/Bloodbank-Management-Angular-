@@ -1,0 +1,38 @@
+<mat-card class="m-3">
+    <mat-card-title>
+        {{volunteerObj?.volunteer_name}}
+    </mat-card-title>
+
+
+    <mat-divider></mat-divider>
+
+    <div class="row pt-3">
+        
+        <div class="col-md-6">
+            <mat-card-content>
+
+                <br>
+                <span> Blood Groups : </span>{{volunteerObj.blood}}<br>
+                <br>
+                <br>
+                <span> Mobile : </span>{{volunteerObj.mobile}}<br>
+                <br>
+                <br>
+                <span> Age : </span>{{volunteerObj.age}}<br>
+                <br>
+                <br>
+                <span> Gender : </span>{{volunteerObj.gender}}<br>
+                <br>
+                <br>
+                <span> Date of Recent Donation : </span>{{formatDate(volunteerObj.date)}}<br>
+                <br>
+                <br>
+
+            </mat-card-content>
+        </div>
+
+        
+    </div>
+
+
+</mat-card>

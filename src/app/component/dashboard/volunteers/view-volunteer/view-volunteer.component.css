@@ -1,0 +1,12 @@
+span{
+    font-size: larger;
+    font-weight: 400;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mat-card-title{
+    font-weight: 300!important;
+    font-size: 30px;
+    color: rgb(210, 17, 239);
+}

@@ -1,0 +1,66 @@
+.container {
+    max-width: 6000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url(../rules/images/rules.jpg);
+    background-size: cover;
+
+  }
+  
+  .dos, .donts {
+    margin-bottom: 40px;
+    
+  }
+  h3{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin:18px;
+  }
+  h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    margin: 12px;
+    
+  }
+  
+  .rule {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .rule-content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .rule-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .rule-text {
+    font-size: 16px;
+  }
+  
+
+
+
